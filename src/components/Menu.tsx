@@ -19,9 +19,9 @@ export const Menu = () => {
         <div className="flex items-center gap-2">
           <img
             src={imgLogo}
-            width={36}
-            height={36}
-            alt=""
+            width={44}
+            height={44}
+            alt="imagem de perfil"
             className="rounded-full"
           />
           <h2 className="font-extrabold font-source text-[16px] lg:text-[18px] text-slate-800 hover:text-purple-800">
@@ -29,11 +29,11 @@ export const Menu = () => {
           </h2>
         </div>
 
-        <nav className="md:relative z-10">
+        <nav className="md:relative">
         {
-          !isOpen ? <MenuIcon onClick={()=>setIsOpen(!isOpen)} className="md:hidden"/> : <X className="md:hidden" onClick={()=>setIsOpen(!isOpen)}/>
+          !isOpen ? <MenuIcon onClick={()=>setIsOpen(!isOpen)} className="md:hidden  rounded-full"/> : <X className="md:hidden" onClick={()=>setIsOpen(!isOpen)}/>
         }
-      <ul className={clsx(isOpen ? 'flex flex-col justify-center items-end absolute right-0 top-20 w-screen h-64 md:w-[400px] md:h-20 md:flex-row md:static md:items-center md:bg-zinc-50 bg-slate-100 shadow px-4 ' : "hidden md:flex md:w-[400px] md:h-20 md:flex-row md:static md:items-center md:bg-zinc-50 bg-slate-100" )}>
+      <ul className={clsx(isOpen ? 'flex flex-col justify-center items-end absolute right-0 top-20 w-screen h-64 md:w-[400px] md:h-20 md:flex-row md:static md:items-center md:bg-zinc-50 bg-slate-100 shadow px-4 z-50' : "hidden md:flex md:w-[400px] md:h-20 md:flex-row md:static md:items-center md:bg-zinc-50 bg-slate-100" )}>
             {manuOptions.map(({ item }, index) => (
               <>
                 <li
