@@ -1,0 +1,66 @@
+import frontEndGif from '../../public/frontend.gif'
+
+export const Hero = () =>{
+  return (
+    <>
+      <section className="flex flex-col justify-start gap-[32px] items-center bg-zinc-200 h-screen pt-20">
+        <img src={frontEndGif} width={128} height={128} alt="" />
+        <h2 className="font-source font-extrabold tracking-wider text-[28px] flex items-center text-center justify-center text-zinc-900">
+          OLÁ , EU SOU <br></br>CLÁUDIO SILVA
+        </h2>
+        <p className="font-source text-zinc-700 leading-[28px] text-[14px] px-4 text-center font-semibold ">
+          Um desenvolvedor da Web orientado a resultados, construindo e
+          gerenciando sites e aplicativos da Web que levam ao sucesso do produto
+          geral
+        </p>
+        <button className="h-10 bg-purple-800 px-8 rounded-md w-[60%] font-source text-zinc-100 text-[14px] font-bold hover:bg-purple-700">
+          Projetos
+        </button>
+      </section>
+
+      <section className="h-screen flex flex-col justify-start pt-20 gap-12">
+        <div className="flex flex-col items-center justify-center">
+          <h2 className="font-source font-semibold tracking-widest text-[24px] flex items-center text-center justify-center text-zinc-900">
+            SOBRE MIN
+          </h2>
+          <div className="w-10 bg-purple-600 h-1 rounded-full"></div>
+        </div>
+        <p className="font-source text-zinc-700 leading-[18px] text-[12px] px-4 text-center font-semibold ">
+          Aqui você encontrará mais informações sobre mim, o que faço e minhas
+          habilidades atuais principalmente em termos de programação e
+          tecnologia
+        </p>
+
+        <section className="px-4 font-source flex flex-col gap-6">
+          <strong className="text-[18px] tracking-wider">Quem Eu Sou</strong>
+          <article className="flex flex-col gap-4 ">
+            <p className="font-source text-zinc-500 leading-[20px] text-[14px] text-left font-semibold ">
+              {" "}
+              Sou um <strong>desenvolvedor Web focado em Frontend</strong>,
+              construindo e gerenciando o Front-end de sites e aplicações Web
+              que levam ao sucesso do produto geral. Confira alguns dos meus
+              trabalhos na seção Projetos.
+            </p>
+            <p className="font-source text-zinc-500 leading-[20px] text-[14px] text-left font-semibold ">
+              Também gosto de compartilhar conteúdo relacionado ao que aprendi
+              ao longo dos anos em Desenvolvimento Web para que possa ajudar
+              outras pessoas da Comunidade de Desenvolvimento. Sinta-se à
+              vontade para se conectar ou me seguir no Linkedin e no Instagram,
+              onde posto conteúdo útil relacionado ao desenvolvimento e
+              programação web
+            </p>
+            <p className="font-source text-zinc-500 leading-[20px] text-[14px] text-left font-semibold ">
+              Estou aberto a oportunidades de trabalho onde possa contribuir,
+              aprender e crescer. Se tiver uma boa oportunidade que corresponda
+              às minhas competências e experiência,{" "}
+              <strong>não hesite em contactar-me.</strong>
+            </p>{" "}
+          </article>
+          <button className="h-10 bg-purple-700 px-8 rounded-md w-[60%] font-source text-zinc-100 text-[14px] font-bold hover:bg-purple-700">
+            Contratar
+          </button>
+        </section>
+      </section>
+    </>
+  );
+}
