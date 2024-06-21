@@ -1,22 +1,25 @@
 import frontEndGif from '../assets/frontend.gif'
+import { ButtonCTA } from './Button';
 
 export const Hero = () =>{
   return (
     <>
-      <section className="bg-hero flex flex-col justify-start gap-[32px] items-center pt-20 xs:pt-16 xs:pb-20 bg-zinc-200 h-screen">
-        <img src={frontEndGif} className='w-[50%] h-auto sm:w-[60%] md:w-[40%] lg:[30%]' />
+      <section className="bg-hero flex flex-col justify-start gap-[32px] items-center pt-20 xs:pt-20 xs:pb-20 bg-zinc-200 h-auto">
+        <img
+          src={frontEndGif}
+          className="z-20 w-[50%] h-auto sm:w-[60%] md:w-[40%] lg:[30%]"
+        />
         <h2 className="xs:text-[36px] font-source font-extrabold text-[28px] flex items-center text-center justify-center text-zinc-950 tracking-wider">
           OLÁ, EU SOU O <br></br>CLAUDIO SILVA
-          
         </h2>
         <p className="font-source text-zinc-600 leading-[20px] xs:leading-[28px] text-[14px] xs:text-[20px] xs:px-8 px-4 text-center font-semibold ">
           Um desenvolvedor da Web orientado a resultados, construindo e
           gerenciando sites e aplicativos da Web que levam ao sucesso do produto
           geral
         </p>
-        <button className="h-10 bg-purple-800 rounded-md w-[60%] font-source text-zinc-100 text-[14px] font-bold hover:bg-purple-700 tracking-widest cursor-pointer">
-         {(" Projetos").toUpperCase()}
-        </button>
+<ButtonCTA>
+  PROJETOS
+</ButtonCTA>
       </section>
 
       <section className="h-screen flex flex-col justify-start pt-20 gap-12">
@@ -57,9 +60,7 @@ export const Hero = () =>{
               <strong>não hesite em contactar-me.</strong>
             </p>{" "}
           </article>
-          <button className="h-10 bg-purple-700 px-8 rounded-md w-[60%] font-source text-zinc-100 text-[14px] font-bold hover:bg-purple-700">
-            Contratar
-          </button>
+     
         </section>
       </section>
     </>
