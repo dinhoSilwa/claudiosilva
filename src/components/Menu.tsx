@@ -29,11 +29,11 @@ export const Menu = () => {
           </h2>
         </div>
 
-        <nav className="md:relative">
+        <nav className="md:relative z-10">
         {
-          isOpen ? <MenuIcon onClick={()=>setIsOpen(!isOpen)} className="md:hidden"/> : <X className="md:hidden" onClick={()=>setIsOpen(!isOpen)}/>
+          !isOpen ? <MenuIcon onClick={()=>setIsOpen(!isOpen)} className="md:hidden"/> : <X className="md:hidden" onClick={()=>setIsOpen(!isOpen)}/>
         }
-      <ul className={clsx(isOpen ? "hidden md:flex md:w-[400px] md:h-20 md:flex-row md:static md:items-center md:bg-zinc-50" : 'flex flex-col justify-center items-end absolute right-0 top-20 w-screen h-64 md:w-[400px] md:h-20 md:flex-row md:static md:items-center md:bg-zinc-50 bg-slate-100 shadow px-4 ' )}>
+      <ul className={clsx(isOpen ? 'flex flex-col justify-center items-end absolute right-0 top-20 w-screen h-64 md:w-[400px] md:h-20 md:flex-row md:static md:items-center md:bg-zinc-50 bg-slate-100 shadow px-4 ' : "hidden md:flex md:w-[400px] md:h-20 md:flex-row md:static md:items-center md:bg-zinc-50 bg-slate-100" )}>
             {manuOptions.map(({ item }, index) => (
               <>
                 <li
