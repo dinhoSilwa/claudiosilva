@@ -31,37 +31,37 @@ export const Hero = () => {
           tecnologia
         </Paragraph>
 
-        <section className="px-4 font-source flex flex-col gap-6">
+        <section className="px-4 font-source flex flex-col gap-[32px] h-auto">
           <Title type="sub-title">Quem Eu sou ?</Title>
-          <article className="flex flex-col gap-4 ">
+          <article className="flex flex-col gap-[16px]">
             <Paragraph type="normal-text">
-              Sou um <strong>desenvolvedor Web focado em Frontend</strong>,
-              construindo e gerenciando o Front-end de sites e aplicações Web
-              que levam ao sucesso do produto geral. Confira alguns dos meus
-              trabalhos na seção Projetos.
+              Como desenvolvedor frontend freelancer, acumulei mais de 3 anos de
+              experiência entregando soluções de alta qualidade para uma
+              variedade de projetos. Minha abordagem é centrada na criação de
+              interfaces intuitivas e funcionais, utilizando habilidades em
+              <strong> JavaScript, React, Next.js , etc.., e design de UI/UX</strong> para garantir
+              resultados excepcionais.
             </Paragraph>
             <Paragraph type="normal-text">
-              Também gosto de compartilhar conteúdo relacionado ao que aprendi
-              ao longo dos anos em Desenvolvimento Web para que possa ajudar
-              outras pessoas da Comunidade de Desenvolvimento. Sinta-se à
-              vontade para se conectar ou me seguir no Linkedin e no Instagram,
-              onde posto conteúdo útil relacionado ao desenvolvimento e
-              programação web
+              Minha jornada profissional é marcada pelo compromisso com a
+              excelência e pela <strong>busca contínua por inovação</strong>. Ao longo dos anos,
+              trabalhei com diversos clientes e empresas, colaborando de forma
+              flexível e adaptável para atender às necessidades específicas de
+              cada projeto.{" "}
             </Paragraph>
             <Paragraph type="normal-text">
-              Estou aberto a oportunidades de trabalho onde possa contribuir,
-              aprender e crescer. Se tiver uma boa oportunidade que corresponda
-              às minhas competências e experiência,{" "}
-              <strong>não hesite em contactar-me.</strong>
+              Seja para um projeto freelance desafiador ou para integrar equipes
+              corporativas, estou pronto para contribuir com meu expertise em
+              frontend. Valorizo a comunicação transparente e a colaboração
+              próxima com clientes e parceiros, garantindo entregas que não
+              apenas atendem, mas excedem expectativas.{" "}
             </Paragraph>
-            <ButtonCTA>
-              Contato
-            </ButtonCTA>
           </article>
+          <ButtonCTA>Contato</ButtonCTA>
         </section>
-        
+
         <section className="h-screen bg-red-400">
-          oippqwiqwpo iqpwoi  pqowip  oqw q
+          oippqwiqwpo iqpwoi pqowip oqw q
         </section>
       </section>
     </>

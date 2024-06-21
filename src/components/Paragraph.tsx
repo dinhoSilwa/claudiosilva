@@ -13,7 +13,7 @@ export const Paragraph = ({children ,type, ...props}: IParagraph) =>{
       <p
         {...props}
         className={clsx(`font-source font-normal `,
-          `xs:text-[16px] xs:px-8`,
+          `xs:text-[16px] xs:px-8 xxs:leading-[24px]`,
           {
           "text-center text-zinc-600 px-4" : type == 'sub-text'
           },

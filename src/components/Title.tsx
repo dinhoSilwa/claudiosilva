@@ -17,7 +17,7 @@ export const Title = ({ children, type, ...props }: ITitle) => {
               "text-[24px] flex items-center text-center": type === "title",
             },
             {
-              "w-full first-letter:uppercase text-[12px] uppercase":
+              "w-full first-letter:uppercase text-[18px] uppercase":
                 type === "sub-title",
             }
           )}
