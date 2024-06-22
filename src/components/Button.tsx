@@ -15,7 +15,7 @@ export const ButtonCTA = ({ children, size, ...props }: Ibutton) => {
         ` rounded-md font-source text-zinc-100 text-[14px] font-bold bg-purple-600 hover:bg-purple-700`,
          
         {
-          "flex justify-center items-center w-[30%] h-10 px-8 text-[14px] tracking-widest" : size === "small"
+          "flex justify-center items-center w-[30%] h-10 text-[14px] tracking-widest" : size === "small"
         },
         {
           "flex justify-center items-center w-[55%] h-14 px-8 text-[20px] tracking-widest" : size === "medium"

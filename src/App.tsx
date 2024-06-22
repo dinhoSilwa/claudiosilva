@@ -4,6 +4,8 @@ import { AboutMe } from './components/Aboutme'
 import { Hero } from './components/Hero'
 import { Menu } from './components/Menu'
 import { Projects } from './components/Projetos'
+import { Services } from './components/Services'
+
 
 function App() {
 
@@ -12,7 +14,9 @@ function App() {
 <Menu />
 <Hero />
 <AboutMe />
+<Services />
 <Projects />
+
 </>
   )
 }

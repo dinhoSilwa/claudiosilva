@@ -3,7 +3,7 @@ import React, { ComponentProps } from "react";
 
 interface IParagraph extends ComponentProps<'p'>{
   children : React.ReactNode;
-  type?: 'sub-text' | 'normal-text'
+  type?: 'sub-text' | 'normal-text' | 'service-text'
 }
 
 export const Paragraph = ({children ,type, ...props}: IParagraph) =>{
@@ -20,6 +20,10 @@ export const Paragraph = ({children ,type, ...props}: IParagraph) =>{
           },
           {
             "xs:px-0 xxs:px-0 xxs:text-[18px] md:leading-[32px] font-source text-zinc-600 leading-[20px] text-left font-normal" : type == 'normal-text'
+            }
+            ,
+          {
+            "xs:px-0 xxs:px-0 xxs:text-[18px] md:leading-[32px] font-source text-zinc-600 leading-[20px] font-normal" : type == 'service-text'
             }
           
           

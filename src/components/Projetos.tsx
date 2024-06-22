@@ -14,10 +14,13 @@ export const Projects = () => {
             ({ name, description, skillUsed }, index) => (
               <li
                 key={index}
-                className="w-full px-4 h-auto flex flex-col justify-center"
+                className="px-4 h-auto flex flex-col justify-center"
               >
-                <img src={pro} alt="projeto 01" className="w-full h-auto" />
-                <div className="w-full bg-zinc-50 py-10 flex flex-col justify-start items-center gap-8">
+                <figure className="overflow-hidden">
+                <img src={pro} alt="projeto 01" className="w-[100%] h-auto" />
+
+                </figure>
+                <div className="w-full py-10 flex flex-col justify-start items-center gap-8">
                   <Title type="project-title">{name}</Title>
                   <Paragraph type="sub-text">{description}</Paragraph>
                   <ul className="flex gap-2 flex-wrap items-center justify-center px-8">
