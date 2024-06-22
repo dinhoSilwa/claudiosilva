@@ -3,18 +3,28 @@ import { ComponentProps, ReactNode } from "react";
 
 interface Ibutton extends ComponentProps<"button"> {
   children: ReactNode;
+  size? : "small" | "medium" | "large"
 }
 
-export const ButtonCTA = ({ children, ...props }: Ibutton) => {
+export const ButtonCTA = ({ children, size, ...props }: Ibutton) => {
   return (
     <button
       {...props}
      
       className={clsx(
-        `h-10 bg-purple-600 px-8 rounded-md w-[60%] font-source text-zinc-100 text-[14px] font-bold hover:bg-purple-700`,
-        `sm:h-16 sm:text-[20px]`,
-        `xxs:text-[20px] xxs:h-16`,
-        `md:w-[30%]`
+        ` rounded-md font-source text-zinc-100 text-[14px] font-bold bg-purple-600 hover:bg-purple-700`,
+         
+        {
+          "flex justify-center items-center w-[30%] h-10 px-8 text-[14px] tracking-widest" : size === "small"
+        },
+        {
+          "flex justify-center items-center w-[55%] h-14 px-8 text-[20px] tracking-widest" : size === "medium"
+        },
+        {
+          "flex justify-center items-center w-[70%] h-14 px-8 text-[24px] tracking-widest" : size === "large"
+        },
+
+      
       )}
     >
       {children}

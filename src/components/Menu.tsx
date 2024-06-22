@@ -1,5 +1,5 @@
 import { MenuIcon, X } from "lucide-react";
-import imgLogo from "../../public/143217996.png";
+import imgLogo from "./../assets/143217996.png"
 import { useState } from "react";
 import clsx from "clsx";
 

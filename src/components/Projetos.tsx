@@ -1,0 +1,42 @@
+import { projectList } from "../model/skillist";
+import pro from "./../assets/item01.png";
+import { ButtonCTA } from "./Button";
+import { Paragraph } from "./Paragraph";
+import { Title } from "./Title";
+
+export const Projects = () => {
+  return (
+    <>
+      <section className="pt-10 flex flex-col gap-12">
+        <Title type="title"> Meus Projetos</Title>
+        <ul className="flex flex-col gap-16">
+          {projectList.projects.map(
+            ({ name, description, skillUsed }, index) => (
+              <li
+                key={index}
+                className="w-full px-4 h-auto flex flex-col justify-center"
+              >
+                <img src={pro} alt="projeto 01" className="w-full h-auto" />
+                <div className="w-full bg-zinc-50 py-10 flex flex-col justify-start items-center gap-8">
+                  <Title type="project-title">{name}</Title>
+                  <Paragraph type="sub-text">{description}</Paragraph>
+                  <ul className="flex gap-2 flex-wrap items-center justify-center px-8">
+                    {skillUsed.map((skill, index) => (
+                      <li
+                        key={index}
+                        className=" font-source px-4 bg-zinc-300 hover:bg-zinc-400 hover:text-white rounded-md py-2"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                  <ButtonCTA size="small">Visualizar</ButtonCTA>
+                </div>
+              </li>
+            )
+          )}
+        </ul>
+      </section>
+    </>
+  );
+};

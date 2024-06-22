@@ -1,7 +1,9 @@
 
 import './App.css'
+import { AboutMe } from './components/Aboutme'
 import { Hero } from './components/Hero'
 import { Menu } from './components/Menu'
+import { Projects } from './components/Projetos'
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
 <>
 <Menu />
 <Hero />
+<AboutMe />
+<Projects />
 </>
   )
 }
