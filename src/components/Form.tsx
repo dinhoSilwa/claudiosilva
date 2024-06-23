@@ -1,4 +1,5 @@
 import { ButtonCTA } from "./Button"
+import { Paragraph } from "./Paragraph"
 import { Title } from "./Title"
 
 export const Form = () =>{
@@ -6,6 +7,9 @@ export const Form = () =>{
     <>
     <section className='bg-external h-auto py-20 flex flex-col gap-10'>
 <Title>{"Entre em Contato".toUpperCase()}</Title>
+<Paragraph type="sub-text">
+Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e entrarei em contato com você o mais breve possível
+</Paragraph>
 
 <form className='bg-white font-source flex flex-col gap-2 w-[90%] ml-auto mr-auto py-10 rounded-lg shadow-lg'>
 <fieldset className='flex flex-col gap-2 px-4 mb-4'>
