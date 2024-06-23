@@ -1,8 +1,6 @@
 import { CodeXml, MonitorCheck, Wrench } from "lucide-react"
-import { ButtonCTA } from "./Button"
 import { Paragraph } from "./Paragraph"
 import { Title } from "./Title"
-import { CgIfDesign } from "react-icons/cg"
 
 export const Services = () =>{
   return(
