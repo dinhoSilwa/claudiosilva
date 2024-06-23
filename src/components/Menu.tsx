@@ -15,7 +15,7 @@ export const Menu = () => {
 
   return (
     <>
-      <header className="h-20 border flex items-center justify-between bg-zinc-50 max-w-full px-4 shadow-md lg:h-24">
+      <header className="h-20 border flex items-center justify-between bg-white max-w-full px-4 shadow-md lg:h-24">
         <div className="flex items-center gap-2">
           <img
             src={imgLogo}
