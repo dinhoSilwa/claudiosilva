@@ -7,7 +7,7 @@ import { Title } from "./Title";
 export const Projects = () => {
   return (
     <>
-      <section className="pt-10 flex flex-col gap-12">
+      <section className="py-20 flex flex-col gap-12">
         <Title type="title"> {"Meus Projetos".toUpperCase()}</Title>
         <ul className="flex flex-col gap-16">
           {projectList.projects.map(

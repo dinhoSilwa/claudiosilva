@@ -9,7 +9,7 @@ export const Hero = () => {
 
   return (
     <>
-      <section className="bg-hero flex flex-col justify-start gap-[32px] items-center pt-20 bg-zinc-200 h-auto xs:pt-20 xs:pb-20 xxs:gap-[40px]">
+      <section className="bg-external flex flex-col justify-start gap-[32px] items-center pt-20 bg-zinc-200 h-auto xs:pt-20 xs:pb-20 xxs:gap-[40px]">
         <img
           src={frontEndGif}
           className="w-[50%] h-auto sm:w-[60%] md:hidden lg:[30%]"

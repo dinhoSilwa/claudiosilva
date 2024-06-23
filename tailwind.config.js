@@ -9,6 +9,12 @@ export default {
       fontFamily: {
         source: ["'Source Sans 3'", 'sans-serif'], // Corrigido a configuração da fonte
       },
+      fontSize :{
+        "small" : "12px",
+        "medium" : "14px", 
+        "large" : "20px",
+        "extra-large" : "24px"
+      },
       screens: {
         'xs': '320px',
         'xxs' : '412px',

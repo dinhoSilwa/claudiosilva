@@ -1,11 +1,12 @@
 import { CodeXml, MonitorCheck, Wrench } from "lucide-react"
 import { Paragraph } from "./Paragraph"
 import { Title } from "./Title"
+import { ButtonCTA } from "./Button"
 
 export const Services = () =>{
   return(
      <>
-<section className="pt-10 flex flex-col gap-10 bg-zinc-100">
+<section className="pt-10 py-32 flex flex-col gap-10 bg-zinc-100">
 <Title type="title">{"Meus Serviços".toLocaleUpperCase()}</Title>
       <section className="font-source h-auto flex flex-col gap-8 items-center">
       
@@ -26,6 +27,10 @@ export const Services = () =>{
           <Paragraph type="service-text">
           Melhore o layout do seu site tornando ele + atrativos para os clientes, aumente vendas e esmague seus concorrentes. Deixa comigo a manutenção do seu website.            </Paragraph>
         </article>
+        <section className="w-full flex justify-start pl-8">
+        <ButtonCTA size="medium">Contato</ButtonCTA>
+
+        </section>
       </section>
 </section>
      </>

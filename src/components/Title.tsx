@@ -14,14 +14,14 @@ export const Title = ({ children, type, ...props }: ITitle) => {
           className={clsx(
             "font-source font-extrabold tracking-widest justify-center text-zinc-900",
             {
-              "text-[24px] flex items-center text-center": type === "title",
+              "text-extra-large flex items-center text-center": type === "title",
             },
             {
               "w-full first-letter:uppercase text-[18px] uppercase":
                 type === "sub-title",
             },
             {
-              " text-purple-800 text-[24px] flex items-center text-center tracking-normal": type === "project-title",
+              " text-purple-800 text-extra-large flex items-center text-center tracking-normal": type === "project-title",
             },
           )}
         >

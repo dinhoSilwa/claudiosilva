@@ -38,7 +38,7 @@ export const Menu = () => {
               <>
                 <li
                   key={index}
-                  className=" flex items-center justify-end font-source font-extrabold text-zinc-700 text-[12px] hover:text-purple-600 tracking-widest w-11/12 h-20 text-center lg:text-[14px]"
+                  className=" flex items-center justify-end font-source font-extrabold text-zinc-700 text-[12px] hover:text-purple-600 tracking-widest w-11/12 h-20 text-center lg:text-medium"
                 >
                   {item.toLocaleUpperCase()}
                 </li>

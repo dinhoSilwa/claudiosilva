@@ -1,10 +1,12 @@
 
 import './App.css'
 import { AboutMe } from './components/Aboutme'
+import { Form } from './components/Form'
 import { Hero } from './components/Hero'
 import { Menu } from './components/Menu'
 import { Projects } from './components/Projetos'
 import { Services } from './components/Services'
+import { Skills } from './components/SkillSection'
 
 
 // const jobflow = {
@@ -24,16 +26,17 @@ function App() {
 
   return (
 <>
-<section className='z-50'>
 <Menu />
-</section>
 <Hero />
 <AboutMe />
+<Skills/>
 <Services />
 <Projects />
-<section>
+<Form />
+<footer className='bg-zinc-950 h-screen'>
 
-</section>
+</footer>
+
 
 </>
   )
