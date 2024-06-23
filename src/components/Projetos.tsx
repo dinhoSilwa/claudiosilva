@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <>
       <section className="pt-10 flex flex-col gap-12">
-        <Title type="title"> Meus Projetos</Title>
+        <Title type="title"> {"Meus Projetos".toUpperCase()}</Title>
         <ul className="flex flex-col gap-16">
           {projectList.projects.map(
             ({ name, description, skillUsed }, index) => (
