@@ -35,7 +35,7 @@ export const Footer = () => {
   return (
     <>
       <footer className="bg-zinc-900 w-[100%] h-auto font-source px-4 py-10 flex flex-col overflow-hidden">
-        <section className="border-zinc-200 flex flex-col items-start gap-4 w-[100%] ">
+        <section className="border-zinc-200 flex flex-col items-start gap-4">
           <Title type="footer-title">{"Social".toUpperCase()}</Title>
 
           <section className="flex gap-4 items-center">
